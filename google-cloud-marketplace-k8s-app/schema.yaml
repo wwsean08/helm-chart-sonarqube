@@ -70,7 +70,13 @@ properties:
     description: The password to connect to the database
     type: string
     default: ''
-
+  gcp_marketplace:
+    title: GCP Marketplace enabled
+    description: this flag indicate to the chart that it runs as a gcp marketplace application
+    type: string
+    default: 'true'
+    enum:
+      - 'true'
 required:
 - name
 - namespace
